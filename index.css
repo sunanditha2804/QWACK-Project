@@ -1,0 +1,247 @@
+.nav-link{
+    font-size: 15px;
+    color: #0e1133;
+    font-weight: 500;
+    line-height: 45px;
+}
+
+/* waves */
+.ocean {
+    height: 150px; /* change the height of the waves here */
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    overflow-x: hidden;
+  }
+  
+  @keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+}
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: 5;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+.waveMiddle {
+    background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
+
+
+.sun{
+    background: orange;
+    border-radius: 50%;
+    left: 36%;
+    box-shadow: 0 0 10px orange, 0 0 60px orange, 0 0 200px #ff0, inset 0 0 80px #ff0;
+    display: inline-block;
+    height: 400px;
+    position: absolute;
+    width: 400px;
+    top: 300px;
+}
+
+.Vocabulary{
+    align-items: center;
+    background-color: #ff4e00;
+    background-image: linear-gradient(227deg, #ff4e00, #ec9f05 74%);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.footer{
+    background-color: #eef1f6;
+    padding-bottom: 60px;
+    padding-top: 50px;
+}
+
+.footer-about-widget{
+    margin-top: 30px;
+    padding-right: 70px;
+}
+
+.footer-about-widget>a {
+    color: #0e1133;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.footer-about-widget .social ul li a {
+    background: #fff;
+    border-radius: 6px;
+    color: #0e1133;
+    height: 36px;
+    line-height: 36px;
+    margin-right: 5px;
+    text-align: center;
+    width: 36px;
+}
+
+.footer-about-widget .social ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-about-widget .social ul li {
+    display: inline-block;
+}
+
+a, i, span {
+    display: inline-block;
+    transition: all .3s linear;
+}
+
+.footer-navigation {
+    margin-top: 30px;
+}
+
+.footer-navigation .title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.footer-navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-navigation ul li a {
+    color: #505056;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.footer-widget-info {
+    margin-top: 30px;
+}
+
+.footer-widget-info .title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.footer-widget-info ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-widget-info ul li a {
+    color: #505056;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.footer-copyright {
+    border-top: 1px solid #e1e5ec;
+    margin-top: 80px;
+    padding-top: 35px;
+}
+
+.Vocabulary .flex {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.Vocabulary .flex .fg, .Vocabulary .flex .fg a {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.Vocabulary .flex .fg a {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.Vocabulary .flex .fg .games {
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    background-color: hsla(0, 0%, 100%, .06);
+    border: 1px solid hsla(0, 0%, 100%, .1);
+    border-radius: 15px;
+    box-shadow: 0 0 1rem 0 rgba(0,0,0,.2);
+    font-weight: 400;
+    padding: 1rem;
+    width: 400px;
+    margin-bottom: 50px;
+}
+
+.Vocabulary .flex .fg .games h1 {
+    color: #fff;
+}
